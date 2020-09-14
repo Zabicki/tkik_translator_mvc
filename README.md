@@ -1,11 +1,12 @@
-Spring MVC project serving python to llvm translator.
 
-Installing new version of translator in the project:
+<h1>Spring MVC project serving python to llvm translator</h1>
+
+<b>Installing new version of translator in the project:</b>
 
 mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=/path/to/translator/jar
 
 
-How to use:
+<b>How to use:</b>
 1. Install current version of translator with maven plugin
 2. Build project
 3. Deploy war file to web container, e.g. Apache Tomcat.
