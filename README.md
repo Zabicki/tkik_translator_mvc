@@ -3,8 +3,9 @@
 
 <b>Installing new version of translator in the project:</b>
 
-mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=/path/to/translator/jar
-
+```sh
+$ mvn org.apache.maven.plugins:maven-install-plugin:2.5.2:install-file -Dfile=/path/to/translator/jar
+```
 
 <b>How to use:</b>
 1. Install current version of translator with maven plugin
