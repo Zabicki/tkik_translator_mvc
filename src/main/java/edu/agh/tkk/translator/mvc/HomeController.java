@@ -20,7 +20,14 @@ public class HomeController {
 
     @GetMapping(value = "/")
     public String getHome(Model model) {
-        model.addAttribute("code", new Code());
+        Code code = new Code();
+        code.setPythonCode(
+                "def fib(term):\n" +
+                        "   if term <= 1:\n" +
+                        "       return term\n" +
+                        "   else:\n" +
+                        "       return fib(term-1) + fib(term-2)");
+        model.addAttribute("code", code);
         return "home";
     }
 }
